@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* SideBar */
+
+.sidebar {
+    background-color:  #003380;
+    margin: 0;
+    padding: 0;
+    width: 18rem;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.budy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 18%;
+}
+
+
+.bar {
+    margin-top: 30%;
+}
+
+
+
+.dash, .active {
+    display: flex;
+    margin-left: 16%;
+    margin-top: 2%;
+    text-align: left;
+    font-size: 14px;
+    padding: 13px 10px;
+    
+}
+
+.active {
+    background-color: #0044AA;
+}
+
+
+.dash a, .active a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.dash i {
+    color: #fff;
+}
+
+.active {
+    background-color: #0044AA;
+}
+
+.dash:hover, .uber:hover {
+    background-color: #0044AA;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24;
+  color: #fff;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+.uber {
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+    margin-top: 18%;
+    padding: 0.5rem 0.6rem;
+}
+
+.ub  {
+   margin-top: 0.8rem;
+}
+
+.ub i {
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 15px;
+    z-index: 90;
+    color: #04802E;
+    font-size: 6px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.txt-area {
+    display: block;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+
+.txt-area h4 {
+    margin-top: 0.2rem;
+    color: #ffffff98;
+}
+
+
+
+.txt-area p {
+    margin-top: 0.8rem;
+    color: #ffffff98;
+}
+
+.ic {
+    margin-top: 1rem;
+    margin-left: 20%;
+}
+.ic  {
+    color: #fff;
+}
+
+
+/* Mid Content*/
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btt button{
+    color: #EA6813;
+    background-color: #fff;
+    border: 2px solid #EA6813;
+    border-radius: 0.3rem;
+    padding: 8px 10px;
+    margin-top: 10%;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btt button:hover {
+    color: #fff;
+    background-color: #EA6813;
+    border: 2px solid #ED813A;
+}
+
+.bud span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.bud a {
+    color: #000;
+}
+
+.bud a:hover {
+    color: #666;
+}
+
+
+.right {
+    margin-left: 295px; 
+    font-size: 1.6rem; 
+    padding: 20px 10px;
+    font-weight: 400;
+}
+
+.grey {
+    background-color: #F7F7F7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+}
+
+.rix {
+    margin-left: 0.2rem;
+    font-weight: 500;
+    color: #666666;
+}
+
+
+.rix i {
+    color: #D42620;
+}
+
+.rite {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.st {
+    justify-content: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 0.7rem;
+}
+
+
+
+::placeholder {
+   align-items: left;
+}
+
+input {
+    padding: 0.5rem;
+    width: 20rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 0.2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+
+  input[type=text]:focus {
+    border: 3px solid #7e7e7e;
+  }
+
+  #day {
+    padding: 0.4rem;
+    color: #7e7e7e;
+  }
+
+  select {
+    padding: 0.45rem;
+    width: 20rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 0.2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  select[type=text]:focus {
+    border: 3px solid #7e7e7e;
+  }
+
+  .rit {
+    display: flex;
+    justify-content: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.rit form {
+    margin: 0.5rem;
+}
+
+.gen {
+    color: #EA6813;
+    margin-left: 0.5rem;
+}
+
+#show {
+    margin-top: 2rem;
+    
+}
+
+
+
+  textarea {
+    width: 62rem;
+    height: 6rem;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    border-radius: 0.2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  textarea[type=text]:focus {
+    border: 3px solid #7e7e7e;
+  }
+
+
+  label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px; 
+    display: block; 
+  }
+
+
+
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller devices */
+    .sidebar {
+        display: none; 
+    }
+    .right {
+        width: 100%; 
+    }
+    .top {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .btt-n {
+        margin-top: 10px; 
+    }
+    .grey {
+        padding: 20px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjust styles for more smaller devices */
+    .grey {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* Add-vehicle.css */
+
+
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+
+body.dark-theme .sidebar {
+    
+  
+    color: #ffffff;
+}
+
+.right {
+    
+    background-color: #ffffff;
+}
+
+body.dark-theme .right {
+    
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-theme .right i {
+    color: #ccc;
+}
+
+body.dark-theme .right i:hover {
+    color: #8b8888;
+}
+
+
+body.dark-theme .grey {
+    background-color: #000;
+    color: #fff;
+}
+
+
+body.dark-theme .rix, body.dark-theme label {
+    color: #fff;
+}
+
+body.dark-theme .rix i {
+    color: #D42620;
+  }
+
+
+
+.togg {
+    position: fixed;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 0.1rem  1rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: 1px 1px 1px 0 #000;
+    bottom: 28rem;
+    left: 1rem;
+}
+
+.togg:hover {
+    color: #6e6e6e;
+}

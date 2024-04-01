@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* SideBar */
+
+.sidebar {
+    background-color:  #003380;
+    margin: 0;
+    padding: 0;
+    width: 290px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.budy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 18%;
+}
+
+
+.bar {
+    margin-top: 30%;
+}
+
+
+
+.dash, .active {
+    display: flex;
+    margin-left: 16%;
+    margin-top: 2%;
+    text-align: left;
+    font-size: 14px;
+    padding: 13px 10px;
+    
+}
+
+.active {
+    background-color: #0044AA;
+}
+
+
+.dash a, .active a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.dash i {
+    color: #fff;
+}
+
+
+.dash:hover, .uber:hover {
+    background-color: #0044AA;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24;
+  color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.uber {
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+    margin-top: 18%;
+    padding: 0.5rem 0.6rem;
+}
+
+.ub  {
+   margin-top: 0.8rem;
+}
+
+.ub i {
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 15px;
+    z-index: 90;
+    color: #04802E;
+    font-size: 6px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.txt-area {
+    display: block;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+
+.txt-area h4 {
+    margin-top: 0.2rem;
+    color: #ffffff98;
+}
+
+
+
+.txt-area p {
+    margin-top: 0.8rem;
+    color: #ffffff98;
+}
+
+.ic {
+    margin-top: 1rem;
+    margin-left: 20%;
+}
+
+.ic  {
+    color: #fff;
+}
+
+
+
+/* Mid Content*/
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btt  {
+    color: #fff;
+    background-color: #EA6813;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.7rem 0.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btt i {
+    margin-right: 0.5rem;
+}
+
+.btt:hover{
+    background-color: #ED813A;
+}
+
+.right {
+    margin-left: 295px; 
+    font-size: 1.6rem; 
+    padding: 20px 10px;
+    font-weight: 400;
+}
+
+.ble:hover {
+    background-color: #dfdfdf;
+}
+
+/* Table */
+
+.tab {
+    display: block;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.tr span {
+    background-color: #fff;
+    padding: 0.2rem;
+    border-radius: 0.1rem;
+}
+
+
+
+/* llllll */
+
+.tab div {
+    margin-top: 0.5rem;
+}
+
+.th {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    background-color: #F7F7F7;
+    text-align:left;
+}
+
+.nm {
+    margin-left: -2em;
+}
+
+.num {
+    margin-left: 2.5rem;
+}
+
+.due {
+  margin-left: 1.5rem;
+}
+
+.th .gps{
+    margin-left: 2.8rem;
+}
+
+
+.all {
+    margin-top: 5rem;
+}
+
+.ex {
+    margin: 0 0 0 7rem;
+    height: 2rem;
+}
+
+
+
+.th p {
+   margin-top: 0.4rem;
+   
+}
+
+.tab
+
+
+.ble {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    background-color: #F7F7F7;
+    padding: 0.3rem;
+}
+
+.ble p{
+    padding: 0.1rem 4.1rem;
+    margin-left: 3rem;
+    margin-top: 0.6rem;
+}
+
+
+
+.ble i  {
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+}
+
+.ble img {
+    width: 1.9rem;
+    height: 1.8rem;
+    border-radius: 0.1rem;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+
+}
+
+
+.ble span {
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+}
+
+.ble input {
+    margin-left: 2rem;
+}
+
+
+#chbox {
+    margin-top: 0.3rem;
+}
+
+
+
+
+
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .bud {
+        margin-bottom: 20px;
+    }
+
+    .btt-n {
+        margin-bottom: 20px;
+    }
+
+    .tab {
+        flex-direction: column;
+    }
+
+    .ble {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .ble img {
+        margin-bottom: 10px;
+    }
+
+    .ble span {
+        margin-bottom: 5px;
+    }
+
+    .ble p {
+        margin-bottom: 5px;
+    }
+}
+
+
+
+body.dark-theme  {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme  .th {
+    background-color: #000;
+}
+
+.dark-theme .ble {
+    background-color: #000;
+}
+
+.dark-theme .tr {
+    color: #000;
+}
+
+
+
+
+.togg {
+    position: fixed;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 0.1rem  1rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: 1px 1px 1px 0 #000;
+    bottom: 28rem;
+    left: 1rem;
+}

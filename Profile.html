@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="Profile.css">
+    <script src="https://kit.fontawesome.com/70d9870e0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <a href="index.html"> <img
+                    src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+            </a>
+        </div>
+        <div class="bar">
+            <div class="dash">
+                <span class="material-symbols-outlined">
+                    dashboard
+                </span>
+                <a href="Dashboard.html">Dashboard</a>
+            </div>
+            <div class="dash">
+                <span class="material-symbols-outlined">
+                    directions_car
+                </span>
+                <a href="My-vehicles.html">My Vehicles</a>
+            </div>
+            <div class="dash">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                <a href="riders.html">My Riders</a>
+            </div>
+            <div class="dash">
+                <span class="material-symbols-outlined">
+                    encrypted
+                </span>
+                <a href="driversafety.html">Safety and Support</a>
+            </div>
+            <div class="dash">
+                <span class="material-symbols-outlined">
+                    warehouse
+                </span>
+                <a href="Warehouse.html">Warehouse</a>
+            </div>
+
+            <a href="Profile.html" class="abb">
+                <div class="uber">
+                    <div class="ub">
+                        <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png" alt="Uber">
+                    </div>
+                    <div class="txt-area">
+                        <h4>GIG Logistics</h4>
+                        <p>boss@gigl.com</p>
+                    </div>
+                    <div class="ic">
+                        <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="mid">
+
+        <div class="right">
+            <div class="top">
+                <div class="bud">
+                    <div class="up">
+                        <i class="fa-solid fa-arrow-left-long"></i><span>Profile</span>
+                    </div>
+                    <div class="butn">
+                        <a href=""><button type="button">Save</button></a>
+                    </div>
+                </div>
+
+
+                <div class="btt">
+                    <div class="prof">
+                        <img src="https://i.postimg.cc/DzqnPFTd/gig-logo.png" alt="GIG">
+                    </div>
+
+                    <div class="cam">
+                        <img src="https://i.postimg.cc/MTNK1372/cam.png" alt="cam">
+                    </div>
+
+                </div>
+
+
+
+                <div class="grey">
+                    <div class="rix">
+                        <p>Personal Details <i class="fa-light fa-asterisk"></i></p>
+                        <span class="material-symbols-outlined" id="material-symbols-outlined">
+                            border_color
+                        </span>
+
+
+                    </div>
+
+                    <div class=" rit">
+                        <form action="/action_page.php">
+                            <label for="fname">Full Name<br></label>
+                            <input type="text" name="fname" id="fname" placeholder="Enter">
+                        </form>
+                        <form action="/action_page.php">
+                            <label for="skeeping unit">Email address<br></label>
+                            <input type="email" name="email" id="mail" placeholder="erlwyn@gmail.com">
+                        </form>
+                        <form action="/action_page.php">
+                            <label for="pnumber">Phone Number<br></label>
+                            <input type="text" name="pnumber" id="number" placeholder="+234 90266546342">
+                        </form>
+                    </div>
+                    <div class="st">
+                        <form action="/action_page.php">
+                            <label for="address">Address<br></label>
+                            <input type="text" name="address" id="address" placeholder="Ikoyi, Lagos State">
+                        </form>
+
+                        <form action="/action_page.php">
+                            <label for="password">Password<br></label>
+                            <input type="password" name="password" id="pass" placeholder="Paris@99856">
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+                <div class="grey">
+                    <div class="rix">
+                        <p>Company Details</p>
+                        <span class="material-symbols-outlined" id="material-symbols-outlined">
+                            border_color
+                        </span>
+                    </div>
+
+                    <div class="rit">
+                        <form action="/action_page.php">
+                            <label for="cname">Company Name<br></label>
+                            <input type="text" name="cname" id="cname" placeholder="Uber">
+                        </form>
+
+                        <form action="/action_page.php">
+                            <label for="supplier contact">Company Adress<br></label>
+                            <input type="text" name="price" id="caddress" placeholder="boss@uber.com">
+                        </form>
+
+                        <form action="/action_page.php">
+                            <label for="reg number">Registration Number<br></label>
+                            <input type="text" name="regnumber" id="reg" placeholder="589556">
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+                <button onclick="toggleTheme()" class="togg"><i class="fa-solid fa-moon fa-spin"></i></button>
+                <!-- Button to toggle theme -->
+
+
+                <script src="Profile.js"></script>
+</body>
+
+</html>

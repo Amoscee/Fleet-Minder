@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse</title>
+    <link rel="stylesheet" href="Warehouse.css">
+    <script src="https://kit.fontawesome.com/70d9870e0f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <a href="index.html"> <img
+                    src="https://i.postimg.cc/mgD7R15J/Fleet-Minder-2.png" alt="Logo">
+            </a>
+        </div>
+        <div class="bar">
+            <div class="dash">
+                <span class="material-symbols-outlined">
+                    dashboard
+                </span>
+                <a href="Dashboard.html">Dashboard</a>
+            </div>
+            <div class="dash">
+                <span class="material-symbols-outlined">
+                    directions_car
+                </span>
+                <a href="My-vehicles.html">My Vehicles</a>
+            </div>
+            <div class="dash">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                <a href="riders.html">My Riders</a>
+            </div>
+            <div class="dash">
+                <span class="material-symbols-outlined">
+                    encrypted
+                </span>
+                <a href="driversafety.html">Safety and Support</a>
+            </div>
+            <div class="active">
+                <span class="material-symbols-outlined">
+                    warehouse
+                </span>
+                <a href="warehouse.html">Warehouse</a>
+            </div>
+
+            <a href="Profile.html" class="abb">
+                <div class="uber">
+                    <div class="ub">
+                        <i class="fa-solid fa-circle"></i><img src="https://i.postimg.cc/4xg5nDb9/GIG.png" alt="Uber">
+                    </div>
+                    <div class="txt-area">
+                        <h4>GIG Logistics</h4>
+                        <p>boss@gigl.com</p>
+                    </div>
+                    <div class="ic">
+                        <box-icon name='export' rotate='270' color='#ffffff'></box-icon>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="right">
+        <div class="top">
+            <div class="bud">
+                <h3>Warehouse</h3>
+            </div>
+            <div class="btt-n">
+                <a href="Warehouse-add.html" class="btt"><i
+                        class="fa fa-add"></i>Add Items</a>
+            </div>
+        </div>
+
+
+
+        <div class="tab">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="amp"><input type="checkbox" name="chackbox" id="cbox"><span>Product Name</span></th>
+                        <th>GOS Status</th>
+                        <th>Delivery Status</th>
+                        <th>Quantity</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+
+
+                <tbody>
+
+                    <tr>
+                        <td> <input type="checkbox" name="check"><span>Tripod Stand</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="sec"><span>Successful</span></td>
+                        <td class="cen">12</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Tripod Stand</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="sec"><span>Successful</span></td>
+                        <td class="cen">12</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Camera</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="sec"><span>Successful</span></td>
+                        <td class="cen">2</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Camera</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="sec"><span>Successful</span></td>
+                        <td class="cen">12</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Camera</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="sec"><span>Successful</span></td>
+                        <td class="cen">12</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+                    <!-- -->
+
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Tripod Stand</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="un"><span>Unsuccessful</span></td>
+                        <td class="cen">12</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Tripod Stand</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="un"><span>Unsuccessful</span></td>
+                        <td class="cen">12</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Tripod Stand</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="un"><span>Unsuccessful</span></td>
+                        <td class="cen">2</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+                    <!--  -->
+
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Tripod Stand</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="pro"><span>In Progress</span></td>
+                        <td class="cen">2</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Tripod Stand</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="pro"><span>In Progress</span></td>
+                        <td class="cen">2</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Camera</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="pro"><span>In Progress</span></td>
+                        <td class="cen">2</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Tripod Stand</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="pro"><span>In Progress</span></td>
+                        <td class="cen">12</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="checkbox"><span>Camera</span></td>
+                        <td class="tra"><span>In Transit</span></td>
+                        <td class="pro"><span>In Progress</span></td>
+                        <td class="cen">2</td>
+                        <td><a href=""><i class="far fa-pen-to-square"></i></a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <button onclick="toggleTheme()" class="togg"><i class="fa-solid fa-moon fa-spin"></i></button>
+    <!-- Button to toggle theme -->
+
+
+    <script src=" https://unpkg.com/leaflet/dist/leaflet.js">
+    </script>
+
+    <script src="Warehouse.js"></script>
+</body>
+
+</html>
