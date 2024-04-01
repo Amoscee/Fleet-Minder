@@ -4,7 +4,7 @@ document
     event.preventDefault(); // Prevent form submission
     if (validateForm()) {
       storeRegistrationDetails(); // Store registration details
-      window.location.href = "http://127.0.0.1:5500/Profile/Profile.html"; // Redirect to specified URL
+      window.location.href = "Profile.html"; // Redirect to specified URL
     } else {
       alert("Please fill in all fields."); // Alert if form fields are not filled
     }

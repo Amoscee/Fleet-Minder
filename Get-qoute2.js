@@ -91,7 +91,7 @@ document
 
     // If Ok is clicked, redirect to the dashboard URL
     if (confirmation) {
-      window.location.href = "http://127.0.0.1:5500/Dashboard/Dashboard.html";
+      window.location.href = "Dashboard.html";
     }
   });
 

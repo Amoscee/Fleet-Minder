@@ -113,7 +113,7 @@ function viewProfileAlert() {
   // If the user clicks "OK", they will view the profile
   if (confirmation) {
     window.location.href =
-      "http://127.0.0.1:5500/Landing%20Page/Landing-page.html";
+      "index.html";
   }
 }
 

@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       if (confirmation) {
         window.location.href =
-          "http://127.0.0.1:5500/Landing%20Page/Landing-page.html";
+          "index.html";
       }
     } else {
       // If any input is empty, show error alert
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Please fill the required fields with asterisk or press 'Ok' to leave this page"
       );
       if (confirmation) {
-        window.location.href = "http://127.0.0.1:5500/Dashboard/Dashboard.html";
+        window.location.href = "Dashboard.html";
       }
     }
   });

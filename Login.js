@@ -59,7 +59,7 @@ document
       localStorage.setItem("password", password);
 
       // Redirect to the profile page
-      window.location.href = "http://127.0.0.1:5500/Profile/Profile.html";
+      window.location.href = "Profile.html";
     }
   });
 

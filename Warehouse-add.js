@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
         "Congratulations your vehicle has been added! Please proceed to the main page"
       );
       window.location.href =
-        "http://127.0.0.1:5500/Landing%20Page/Landing-page.html";
+        "index.html";
     } else {
       // If any field is empty, show alert to fill required fields or cancel
       var confirmResult = confirm(
         "Please fill the required fields or press cancel to leave this page"
       );
       if (confirmResult) {
-        window.location.href = "http://127.0.0.1:5500/Dashboard/Dashboard.html";
+        window.location.href = "Dashboard.html";
       }
     }
   }
