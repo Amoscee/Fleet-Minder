@@ -4,7 +4,7 @@ document
     event.preventDefault(); // Prevent form submission
     if (validateForm()) {
       storeRegistrationDetails(); // Store registration details
-      window.location.href = "Profile.html"; // Redirect to specified URL
+      window.location.href = "http://127.0.0.1:5500/Profile/Profile.html"; // Redirect to specified URL
     } else {
       alert("Please fill in all fields."); // Alert if form fields are not filled
     }
@@ -163,4 +163,29 @@ function toggleTheme() {
   toggleButton.innerHTML = isDarkTheme
     ? '<i class="fa-solid fa-sun"></i>'
     : '<i class="fa-solid fa-moon fa-spin"></i>';
+}
+
+//Header Ham//
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const headerContent = document.querySelector(".header-content");
+
+  menuToggle.addEventListener("click", function () {
+    headerContent.classList.toggle("show");
+  });
+
+  // Close the header content when clicking outside the menu
+  document.addEventListener("click", function (event) {
+    if (
+      !menuToggle.contains(event.target) &&
+      !headerContent.contains(event.target)
+    ) {
+      headerContent.classList.remove("show");
+    }
+  });
+});
+
+function myFunction(x) {
+  x.classList.toggle("change");
 }

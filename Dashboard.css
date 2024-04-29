@@ -12,143 +12,201 @@ body {
     padding: 0;
 }
 
-/* SideBar */
+html {
+    font-size: 62.5%;
+}
 
-/* SideBar */
-
-.sidebar {
+.push-tab {
+    margin-left: 15rem;
+  }
+  
+  
+  
+  /* SideBar */
+  
+  
+  
+  .sidemenu {
+    display: block;
     background-color:  #003380;
     margin: 0;
     padding: 0;
-    width: 18rem;
+    width: 20%;
     position: fixed;
     height: 100%;
     overflow: auto;
     font-family: "Montserrat", sans-serif;
-}
-
-
-.budy {
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  
+  
+  
+  
+  
+  
+  .budy {
     display: flex;
     justify-content: space-between;
-}
-
-.logo img {
+  }
+  
+  .sidemenu .logo img {
     width: 50%;
-    margin-left: 25%;
-    margin-top: 18%;
-}
-
-
-.bar {
-    margin-top: 30%;
-}
-
-
-
-.dash, .active {
+    margin-left: 8rem;
+    margin-top: 3rem;
+  }
+  
+  
+  .bar {
+    margin-top: 8rem;
+  }
+  
+  
+  
+  .dash, .active {
     display: flex;
-    margin-left: 16%;
+    margin-left: 2rem;
     margin-top: 2%;
     text-align: left;
-    font-size: 14px;
-    padding: 13px 10px;
+    font-size: 1.5rem;
+    padding: 1.5rem ;
     
-}
-
-.active {
+  }
+  
+  .active {
     background-color: #0044AA;
-}
-
-
-.dash a, .active a {
+  }
+  
+  
+  .dash a, .active a{
     text-decoration: none;
     color: #fff;
-    margin-top: 4px;
-    margin-left: 10px;
-}
-
-.dash i {
+    margin-top: 0.4rem;
+    margin-left: 0.7rem;
+  }
+  
+  .dash i {
     color: #fff;
-}
-
-
-.dash:hover, .uber:hover {
+  }
+  
+  
+  
+  .dash:hover, .uber:hover {
     background-color: #0044AA;
-}
-
-
-.material-symbols-outlined {
+  }
+  
+  
+  .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 300,
   'GRAD' 0,
   'opsz' 24;
   color: #fff;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
-}
-
-
-
-.uber {
+  }
+  
+  
+  .uber {
+    background-color: #0044AA;
+  }
+  
+  
+  .uber {
     display: flex;
-    justify-content: left;
-    margin-left: 5%;
-    margin-top: 18%;
-    padding: 0.5rem 0.6rem;
-}
-
-.ub  {
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-left: 1rem;
+      margin-top: 4rem;
+      padding: 0.5rem 0.6rem;
+      color: #fff;
+      overflow: hidden;
+  }
+  
+  .ub  {
    margin-top: 0.8rem;
-}
-
-.ub i {
+  }
+  
+  .ub i {
     position: absolute;
-    margin-left: 16px;
-    margin-top: 15px;
+    margin-left: 1.8rem;
+    margin-top: 1.4rem;
     z-index: 90;
     color: #04802E;
     font-size: 6px;
     border: 1px solid #fff;
-    border-radius: 50px;
-}
-
-.txt-area {
-    display: block;
-    margin-left: 15px;
+    border-radius: 0.5rem;
+  }
+  
+  .txt-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2rem;
     color: #fff;
-    font-size: 0.8rem;
-}
-
-
-.txt-area h4 {
+    font-size: 1.3rem;
+  }
+  
+  
+  .txt-area h4 {
     margin-top: 0.2rem;
-    color: #ffffff98;
-}
-
-
-
-.txt-area p {
+    color: #fff;
+  }
+  
+  
+  
+  .txt-area p {
     margin-top: 0.8rem;
     color: #ffffff98;
-}
-
-.ic {
+  }
+  
+  .ic {
     margin-top: 1rem;
-    margin-left: 20%;
-}
-
-
-.ic  {
+    margin-left: 2rem;
+  }
+  
+  .ic  {
     color: #fff;
-}
+  }
+  
+  
+  
+  
+  /* Ham Menu */
+  
+  .show {display: block, !important;}
+  
+  
+  .push-tab {
+    margin-left: 15rem;
+  }
+  
+  .me, .closebtn {
+    display: none;
+  }
+  
+  .ham, .menu {
+    display: none;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .side-content {
+    display:none;
+  }
+  
+  
+  /*Sidebar End*/
 
 /* Mid Content*/
 
-.top {
+.upp {
     display: flex;
     justify-content: space-between;
     font-family: "Montserrat", sans-serif;
@@ -158,7 +216,7 @@ a {
     color: #fff;
     background-color: #EA6813;
     border: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-decoration: none;
     padding: 0.7rem 0.2rem;
     cursor: pointer;
@@ -298,12 +356,18 @@ td a:hover{
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
  
+    body {
+        overflow-x: hidden;
+    }
+
     .sidebar {
         display: none; 
     }
     .right {
         width: 100%; 
         margin-left: 0; 
+        margin-top: 5rem;
+        padding: 3rem;
     }
     .top {
         flex-direction: column; 
@@ -322,6 +386,8 @@ td a:hover{
     .grey {
         padding: 10px;
     }
+
+
 }
 
 
@@ -366,4 +432,5 @@ td a:hover{
     box-shadow: 1px 1px 1px 0 #000;
     bottom: 28rem;
     left: 1rem;
+    z-index: 1000;
 }

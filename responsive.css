@@ -6,7 +6,9 @@
     font-family: "Montserrat", sans-serif;
 }
 
-
+body {
+    background-color: #ddd;
+}
 
 html {
     font-size: 62.5%;
@@ -271,226 +273,8 @@ html {
 
 
 
-/*Header Ending*/
 
 
-
-.hero {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.493);
-    background-image: url('https://i.postimg.cc/Jnj5WmsD/new.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    background-blend-mode: darken;
-    height: 90vh;
-    padding: 2rem;
-}
-
-/* Login Card */
-
-.dep {
-    align-items: center;
-    padding: 1rem;
-    margin-top: -10em;
-    
-}
-
-.crd {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.cards {
-    background-color: #fff;
-    box-sizing: border-box;
-    box-shadow: 0.2rem 0.3rem #00000046;
-    padding-right: 1.7rem;
-}
-
-
-.fle img{
-    width: 20%;
-}
-
-
-.card {
-    display: flex;
-    justify-content: center;
-}
-
-.board {
-    display: flex;
-}
-
-.image {
-    background-image: url("https://i.postimg.cc/N05dSW8m/reg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: cover;
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.089);
-    height: 120vh;
-    width: 25rem;
-    padding: 2rem;
-}
-
-
-.regi {
-    text-align: center;
-    padding: 2rem;
-    color: #fff;
-}
-
-
-.regi a {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    font-family: inherit;
-    margin-top: 3rem;
-    text-decoration: none;
-    padding: 2rem;
-}
-
-.regi a h2 {
-    text-decoration: none;
-}
-
-.regi a i {
-    font-size: 2rem;
-    margin-right: 1rem;
-    margin-top: 0.1rem;
-    text-decoration: none;
-}
-
-.regi a i:hover {
-    font-size: 19.5px;
-    color: #aaa;
-}
-
-
-.fle img {
-    width: 30%;   
-    margin-left: 34rem;
-    margin-top: 3rem;
-}
-
-.pah {
-    text-align: center;
-    padding: 2rem;
-}
-
-.pah p {
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    margin-left: auto;
-    margin-top: 15rem;
-}
-
-
-.lap {
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem
-}
-
-
-.form .lap {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.3rem;
-    margin-top: 10rem;
-
-}
-
-
-.form div {
-    margin: 0.9rem;
-}
-
-.two label, .two input{
-     margin-left: 0.6rem;
-     margin-top: 0.6rem;
-}
-
-
-.one label, .one input {
-     margin-top: 4px;
-}
-
-.one input {
-    width: 107%;
-}
-
-
-.two input {
-    width: 100%;
-}
-
-.one {
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    gap: 1.5rem;
-}
-
-
-
-input {
-    padding: 0.6em 3em;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    font-size: 1.2rem;
-    padding: 0.7rem;
-}
-
-input:focus {
-    border: 1px solid #fff;
-    color: #000;
-    border: 0.1rem solid #666;
-}
-
-
-.sub input{
-    align-content: center;
-    text-align: center;
-    margin-left: 0.7rem;
-}
-
-
-input[type=submit] {
-    color: #fffb ;
-    background-color: #EA6813;
-    width: 100%; 
-    font-size: 1.4rem;
-    margin-top: 8%;
-    border: none;
-    padding: 0.7rem;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-}
-
-input[type=submit]:hover {
-    background-color: #ED813A;
-}
-
-.tct {
-    display: flex;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.3rem;
-}
-
-.txt {
-    color: #ED813A;
-    text-align: center;
-}
 
 
 
@@ -499,6 +283,7 @@ input[type=submit]:hover {
 /*Footer Section*/
 
 footer {
+    display: flex;
     background-color: #000;
     display: block;
     justify-content: center;
@@ -506,11 +291,12 @@ footer {
     margin-top: 10rem;
 }
 
-div.logos img{ 
-    width: 10%;
-    margin-left: 10rem;
+.logos img{ 
+    max-width: 10%;
+    margin-left: 60px;
     margin-top: 40px;
 }
+
 .ftr-content {
     display: flex;
     justify-content: space-around;
@@ -699,13 +485,14 @@ footer input[type=email] {
 }
 
 
-footer input[type=email]:focus {
+input[type=email]:focus {
     border: 1px solid #fff;
     color: #000;
     background-color: #fff;
 }
 
 input:hover {
+    
     background-color: #aaa;
 }
 
@@ -742,51 +529,4 @@ input:hover {
 
 
 
-
-
-
-/*Theme Settings */
-
-
-/* Light Theme */
-body.light-theme {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-.cards.light-theme {
-    background-color: #ffffff;
-    color: #000000;
-    box-shadow: 2px 3px #00000046;
-    border: 1px solid #000;
-}
-
-/* Dark Theme */
-body.dark-theme {
-    background-color: #121212;
-    color: #ffffff;
-    border: 2px solid #fff;
-}
-
-.dark-theme .cards {
-    background-color: #000;
-}
-
-.dark-theme .fle img {
-    background-image: url("https://i.postimg.cc/XN27PSZh/Fleet-Logo.png");
-    background-repeat: no-repeat;
-}
-
-
-.togg {
-    position: fixed;
-    font-size: 3rem;
-    border-radius: 50%;
-    padding: 0.1rem  1rem;
-    background-color: #fff;
-    border: none;
-    box-shadow: 1px 1px 1px 0 #000;
-    bottom: 5rem;
-    left: 1rem;
-}
-
+/* Footer End */

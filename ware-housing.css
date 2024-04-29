@@ -265,17 +265,20 @@ z-index: 1;
 /*Header Ending*/
 
 .try {
-    background-color: #000;
-    width: 100%;
+    
+    background-image: url("https://i.postimg.cc/1zQB05sn/Warehousing-hero-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
 }
 
   .land-writing{
-    position: absolute;
-    top: 13.5pc;
     color: #FFFFFF;
-    left: 13pc;
-    font-size: 1.3rem;
+    font-size: 2rem;
     word-spacing: 2px;
+    padding-top: 20rem;
+    padding-left: 15rem;
 }
 
 
@@ -284,22 +287,33 @@ z-index: 1;
     color: #ffffff;
     background-color: #ea6813;
     border-radius: 3px;
-    padding: .7rem 1.5rem;
+    padding: 1.5rem 2rem;
     border: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
-
+  .btn3:hover{
+    background-color: white;
+    font-size: 1.3rem;
+    border: .1rem solid #ea6813;
+    color: #ea6813;
+}
   .loit{
     display: flex;
     padding-top: 3pc;
     justify-content: center;
     align-self: center;
     align-content: center;
-    font-size: 1.3rem;
+    
     }
     .ere{
         margin-top:3pc ;
         margin-left: 5pc;
+    }
+    .ere h2{
+font-size: 2.5rem;
+    }
+    .ere p{
+font-size: 2rem;
     }
     div .image12{
         padding-right: 1pc;
@@ -313,9 +327,19 @@ z-index: 1;
 
     font-size: 1.3rem;
     }
+  
+   
     .werfg{
         margin-top: 3pc;
         margin-right: 5pc;
+    }
+    .werfg h2{
+      font-size: 2.5rem;
+      
+    }
+    .werfg p{
+      font-size: 2rem;
+      
     }
     .fg{
         padding-right: pc;
@@ -334,6 +358,12 @@ z-index: 1;
         margin-top: 2.5pc;
         margin-left: 5pc;  
     }
+    .djffj h2{
+      font-size: 2.5rem;
+    }
+    .djffj p{
+      font-size: 2rem;
+    }
 
 
     /* Footer */
@@ -348,10 +378,10 @@ footer {
     margin-top: 6rem;
 }
 
-.logos img{ 
-    width: 10%;
-    margin-left: 60px;
-    margin-top: 40px;
+div.logos img{ 
+  width: 10%;
+  margin-left: 10rem;
+  margin-top: 40px;
 }
 
 .ftr-content {
@@ -574,7 +604,7 @@ input:hover {
 
 
 /* Media query for screens smaller than 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .navbar {
       flex-direction: column;
       align-items: center;
@@ -609,8 +639,8 @@ input:hover {
       display: block;
     }
   
-    .logs {
-      display: none;
+    div.logs {
+      margin-top: .3rem;
     }
   
     .naija {
@@ -623,19 +653,23 @@ input:hover {
   
     .try {
       text-align: center;
-      margin-top: 20px;
+   
     }
-  
+  .land-writing{
+    padding-top: 23rem;
+    padding-left: 1rem;
+  }
     .land-writing h2 {
-      font-size: 28px;
+      font-size: 2.5rem;
     }
   
     .land-writing p {
-      font-size: 16px;
+      font-size: 1.7rem;
     }
   
-    .btn3 {
-      font-size: 16px;
+    .btn3,.btn3:hover {
+      font-size: 1.2rem;
+      padding: 1.1rem 1.4rem;
     }
   
     .image12 {
@@ -648,10 +682,15 @@ input:hover {
       text-align: center;
       margin-top: 20px;
     }
-  
-    .hjuy,
+    .hjuy img{
+      order: 1;
+    }
+    .werfg{
+order: 2;
+    }
+    .loit,.hjuy,
     .yrfuty {
-      flex-direction: column;
+      display: block;
     }
   
     .werfg,

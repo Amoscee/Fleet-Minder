@@ -59,31 +59,9 @@ document
       localStorage.setItem("password", password);
 
       // Redirect to the profile page
-      window.location.href = "Profile.html";
+      window.location.href = "http://127.0.0.1:5500/Profile/Profile.html";
     }
   });
-
-//Header
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
-};
 
 //Footer
 document
@@ -126,3 +104,50 @@ function toggleTheme() {
     ? '<i class="fa-solid fa-sun"></i>'
     : '<i class="fa-solid fa-moon fa-spin"></i>';
 }
+
+//Header Ham//
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const headerContent = document.querySelector(".header-content");
+
+  menuToggle.addEventListener("click", function () {
+    headerContent.classList.toggle("show");
+  });
+
+  // Close the header content when clicking outside the menu
+  document.addEventListener("click", function (event) {
+    if (
+      !menuToggle.contains(event.target) &&
+      !headerContent.contains(event.target)
+    ) {
+      headerContent.classList.remove("show");
+    }
+  });
+});
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+//Header
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};

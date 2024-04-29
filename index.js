@@ -15,11 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Header
-
+/*Dropdown*/
 /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
+  toggle between hiding and showing the dropdown content */
+function toggleDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
@@ -75,4 +74,40 @@ function toggleTheme() {
   toggleButton.innerHTML = isDarkTheme
     ? '<i class="fa-solid fa-sun"></i>'
     : '<i class="fa-solid fa-moon fa-spin"></i>';
+}
+
+// Header Ham
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const headerContent = document.querySelector(".header-content");
+
+  menuToggle.addEventListener("click", function () {
+    headerContent.classList.toggle("show");
+  });
+
+  // Close the header content when clicking outside the menu
+  document.addEventListener("click", function (event) {
+    if (
+      !menuToggle.contains(event.target) &&
+      !headerContent.contains(event.target)
+    ) {
+      headerContent.classList.remove("show");
+    }
+  });
+});
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+function toggleMenu() {
+  var navbar = document.getElementById("navbar");
+  var hero = document.getElementById("hero");
+  if (navbar.style.display === "block") {
+    navbar.style.display = "none";
+    hero.style.marginTop = "0";
+  } else {
+    navbar.style.display = "block";
+    hero.style.marginTop = navbar.clientHeight + "px";
+  }
 }

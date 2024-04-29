@@ -72,13 +72,12 @@ function searchLocation() {
 
 //Header
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
+/* Dropdown Toggle */
+function toggleDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+// Close the dropdown if the user clicks outside */
 window.onclick = function (event) {
   if (!event.target.matches(".dropbtn")) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -130,4 +129,29 @@ function toggleTheme() {
   toggleButton.innerHTML = isDarkTheme
     ? '<i class="fa-solid fa-sun"></i>'
     : '<i class="fa-solid fa-moon fa-spin"></i>';
+}
+
+//Header Ham//
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const headerContent = document.querySelector(".header-content");
+
+  menuToggle.addEventListener("click", function () {
+    headerContent.classList.toggle("show");
+  });
+
+  // Close the header content when clicking outside the menu
+  document.addEventListener("click", function (event) {
+    if (
+      !menuToggle.contains(event.target) &&
+      !headerContent.contains(event.target)
+    ) {
+      headerContent.classList.remove("show");
+    }
+  });
+});
+
+function myFunction(x) {
+  x.classList.toggle("change");
 }

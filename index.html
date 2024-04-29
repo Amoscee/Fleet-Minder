@@ -6,33 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FleetMinder Landing Page</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-mobile.css">
+    <link rel="stylesheet" href="index-tab.css">
     <script src="https://kit.fontawesome.com/70d9870e0f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+    <!--Header-->
 
     <!--Header-->
 
     <div class="header">
-        <div class="logo">
-            <img src="https://i.postimg.cc/9Q7J8V01/Logo.png" alt="Logo">
 
+
+        <div class="me">
+            <div class="menu">
+                <div class="off">
+                    <div class="logo">
+                        <img src="https://i.postimg.cc/9Q7J8V01/Logo.png" alt="Logo">
+                    </div>
+                </div>
+
+
+                <div class="ham">
+                    <div class="logs">
+                        <div class="login">
+                            <a href="Login.html">Login</a>
+                        </div>
+                        <div class="reg">
+                            <a href="Register.html">Register</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-toggle" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
 
-        <!--Navbar-->
+
+
+    <!--Navbar-->
+
+    <div class="header-content">
         <div class="navbar">
+            <div class="logo">
+                <img src="https://i.postimg.cc/9Q7J8V01/Logo.png" alt="Logo">
+            </div>
             <div class="nav-a">
                 <a href="index.html" class="active">Home</a>
-                <a href="About-us.html">About Us </a>
                 <a href="contactUs.html">Contact Us</a>
 
+                <a href="About-us.html">About Us </a>
+
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Service<i class="fa fa-chevron-down"></i></button>
+                    <button onclick="toggleDropdown()" class="dropbtn">Service<i
+                            class="fa fa-chevron-down"></i></button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="fleet-transportation.html#">Fleet
                             Transportation</a>
-                        <a href="ware-housing.html">Fleet Warehousing</a>
+                        <a href="ware-housing.html">Fleet
+                            Warehousing</a>
                     </div>
                 </div>
             </div>
@@ -45,15 +85,19 @@
                     <a href="Register.html">Register</a>
                 </div>
 
+
                 <div class="naija">
                     <box-icon class="gbl" name='globe' size="1.2em"></box-icon>
                     <p>Nigeria</p>
                 </div>
+
             </div>
         </div>
-
+    </div>
 
     </div>
+
+
 
 
 
@@ -62,7 +106,7 @@
     <div class="hero">
         <div class="let">
             <div class="ash-tag">
-                <p>Fleet Management Software Best Platform Around The World</p>
+                <p>Best Fleet Management Platform Around  <br>The <span>World</span></p>
             </div>
             <div class="one">
                 <p>Fleetminder is the ideal platform for obtaining real-time monitoring, tracking, and storage services.
@@ -166,7 +210,6 @@
 
                 <div class="how">
                     <h3>How Fleet Management Works</h3>
-
                 </div>
                 <div class="who">
                     <h5>Enhance Dispatchers</h5>
@@ -205,50 +248,64 @@
             <div class="horizontal-line2"></div>
         </div>
 
-        <div class="vice">
-            <div class="vi">
 
+        <div class="card2">
 
-                <div class="img-r">
-                    <img src="https://i.postimg.cc/dQTxp1Tt/image-154.png" alt="Image">
-                    <img src="https://i.postimg.cc/0QG90fvh/image-153.png" alt="Image">
+            <div class="ml">
+
+                <div class="imgr">
+                    <img src="https://i.postimg.cc/rwCnq4Hy/image-153.png" alt="Image">
                 </div>
 
-                <div class="card2">
-
-                    <div class="mll">
+                <div class="on">
+                    <div class="head">
                         <h2>Seamless Fleet Transportation</h2>
+                    </div>
 
+                    <div class="gr">
+                        <p>Revolutionize your transportation experience. We bring a fresh perspective to fleet
+                            transportation, Real time tracking ensuring reliability, efficiency, and
+                            environmental responsibility.
+                        </p>
+                    </div>
 
-                        <div class="gr">
-                            <p>Revolutionize your transportation experience. <br> We bring a fresh perspective to fleet
-                                <br> transportation, Real time tracking <br> ensuring reliability, efficiency, and
-                                <br>environmental responsibility.
-                            </p>
-                        </div>
-
-                        <a href="fleet-transportation.html
-                        ">
+                    <div class="bu">
+                        <a href="fleet-transportation.html">
                             <button type="button">READ MORE</button>
                         </a>
                     </div>
 
-                    <div class="mll">
-                        <h2>Top-notch warehousing </h2>
-
-
-                        <div class="gr">
-                            <p>Our service provide easy accessibility on storing <br> your goods still date delivery
-                                and stays on <br> track, with our cutting-edge tracking system, <br> it's not just about
-                                storing; it's about taking <br> control of your inventory.
-                            </p>
-                        </div>
-
-                        <a href="ware-housing.html">
-                            <button type="button">READ MORE</button>
-                        </a>
-                    </div>
                 </div>
+
+            </div>
+
+
+            <div class="ml">
+
+                <div class="imgr">
+                    <img src="https://i.postimg.cc/dQTxp1Tt/image-154.png" alt="Image">
+                </div>
+
+                <div class="on">
+                    <div class="head">
+                        <h2>Top-notch warehousing </h2>
+                    </div>
+
+                    <div class="gr">
+                        <p>Our service provide easy accessibility on storing your goods still date delivery
+                            and stays on track, with our cutting-edge tracking system, it's not just about
+                            storing; it's about taking control of your inventory.
+                        </p>
+                    </div>
+
+                    <div class="bu">
+                        <a href="fleet-transportation.html">
+                            <button type="button">READ MORE</button>
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
@@ -436,7 +493,7 @@
     <!--Testimonials-->
     <div class="blu-bod">
         <div class="side">
-            <h2>What They Say About us</h2>
+            <h2>What They Say <span>About</span> us</h2>
         </div>
         <div class="white-cards" id="testimonial-slideshow">
             <div class="w-crd">
@@ -458,13 +515,14 @@
                         to detail and customer care was evident throughout the entire process. </p>
                 </div>
                 <div class="prof">
-                    <img src="https://i.postimg.cc/yYjPFntF/Portrait1.png" alt="port">
+                    <div class="meg">
+                        <img src="https://i.postimg.cc/yYjPFntF/Portrait1.png" alt="port">
+                    </div>
                     <div class="name">
                         <p>Salami Aishat</p>
                         <p>Feb 01,2024</p>
                     </div>
                 </div>
-
             </div>
 
             <div class="w-crd">
@@ -487,7 +545,9 @@
                         ideal, I appreciated the transparency and the way the situation was handled." </p>
                 </div>
                 <div class="prof">
-                    <img src="https://i.postimg.cc/25b7NY6w/Portrait2.png" alt="port">
+                    <div class="meg">
+                        <img src="https://i.postimg.cc/25b7NY6w/Portrait2.png" alt="port">
+                    </div>
                     <div class="name">
                         <p>Oriowo Adetola</p>
                         <p>Feb 03,2024</p>
@@ -512,8 +572,10 @@
                         making it
                         easy to arrange shipments and manage documentation." </p>
                 </div>
-                <div class="profile">
-                    <img src="https://i.postimg.cc/9f6tWkwj/Portrait3.png" alt="port">
+                <div class="prof">
+                    <div class="meg">
+                        <img src="https://i.postimg.cc/9f6tWkwj/Portrait3.png" alt="port">
+                    </div>
                     <div class="name">
                         <p>Faith Schulze</p>
                         <p>Feb 09,2024</p>
@@ -537,8 +599,10 @@
                         compromising on
                         product quality. I would love to see more products in your range.</p>
                 </div>
-                <div class="profil">
-                    <img src="https://i.postimg.cc/LXNpTQ5P/Portrait-4.png" alt="port">
+                <div class="prof">
+                    <div class="meg">
+                        <img src="https://i.postimg.cc/LXNpTQ5P/Portrait-4.png" alt="port">
+                    </div>
                     <div class="name">
                         <p>Lois</p>
                         <p>Feb 10,2024</p>
@@ -561,8 +625,10 @@
                     <p>"Recently, I used [Service Name] for the first time and was genuinely impressed by the
                         professionalism and efficiency of the team. </p>
                 </div>
-                <div class="profi">
-                    <img src="https://i.postimg.cc/2yyfXdLK/Portrait-5.png" alt="port">
+                <div class="prof">
+                    <div class="meg">
+                        <img src="https://i.postimg.cc/2yyfXdLK/Portrait-5.png" alt="port">
+                    </div>
                     <div class="name">
                         <p>Elsie</p>
                         <p>Feb 20,2024</p>
@@ -576,20 +642,20 @@
 
 
     <!--FleetMinder-->
-    <div class="last">
-        <div class="warp">
-            <div class="pbt">
-                <p>Fleetminder is the best place to track your vehicle and store your package for the time and
-                    when
-                    to
-                    deliver to your location around the world.</p>
-                <a href="About-us.html">
-                    <button type="button">Our Services</button>
 
-                </a>
-            </div>
+    <div class="warp">
+        <div class="pbt">
+            <p>Fleetminder is the best place to track your vehicle and store your package for the time and
+                when
+                to
+                deliver to your location around the world.</p>
+
+            <a href="About-us.html">
+                <button type="button">Our Services</button>
+            </a>
         </div>
     </div>
+
 
 
 
@@ -680,12 +746,8 @@
 
         <div class="end">
             <div class="nig">
-
-
                 <box-icon name='globe' class="glb" color='#ffffff' size="1.2em"></box-icon>
-
-                <p>Nigeria
-                </p>
+                <p>Nigeria</p>
             </div>
             <div class="inpt">
                 <h4>Signup to our Newsletter </h4>
@@ -694,9 +756,10 @@
                     <span class="send"><button type="submit" id="submitButton">Send</button></span>
                 </form>
             </div>
-
         </div>
-
+        <div class="copy">
+            <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        </div>
     </footer>
 
 

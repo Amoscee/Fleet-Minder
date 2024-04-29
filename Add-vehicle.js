@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       if (confirmation) {
         window.location.href =
-          "index.html";
+          "http://127.0.0.1:5500/Landing%20Page/Landing-page.html";
       }
     } else {
       // If any input is empty, show error alert
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Please fill the required fields with asterisk or press 'Ok' to leave this page"
       );
       if (confirmation) {
-        window.location.href = "Dashboard.html";
+        window.location.href = "http://127.0.0.1:5500/Dashboard/Dashboard.html";
       }
     }
   });
@@ -50,4 +50,28 @@ function toggleTheme() {
   toggleButton.innerHTML = isDarkTheme
     ? '<i class="fa-solid fa-sun"></i>'
     : '<i class="fa-solid fa-moon fa-spin"></i>';
+}
+
+// Ham Menu //
+function openNav() {
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    var x = document.getElementById("myLinks");
+    var tab = document.getElementById("myTab");
+    if (x.style.display === "none" || x.style.display === "") {
+      x.style.display = "block";
+      tab.classList.add("push-tab");
+    } else {
+      x.style.display = "none";
+      tab.classList.remove("push-tab");
+    }
+  }
+}
+
+function closeNav() {
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    var x = document.getElementById("myLinks");
+    var tab = document.getElementById("myTab");
+    x.style.display = "none";
+    tab.classList.remove("push-tab");
+  }
 }

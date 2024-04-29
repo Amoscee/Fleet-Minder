@@ -6,7 +6,9 @@
     margin: 0;
     font-family: "Montserrat", sans-serif;
 }
-
+html{
+    font-size: 62.5%;
+  }
 
 /*Header*/
 
@@ -212,6 +214,7 @@
 
   /* Add a media query for smaller devices */
 @media only screen and (max-width: 768px) {
+   
     .header {
       flex-direction: column; 
       align-items: center; 
@@ -290,12 +293,16 @@ color: white;
     padding-bottom: 1rem;
     padding-top: 5rem;
     margin-left: 2.9rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
 
 }
 .writing p{
     padding-bottom: 2rem;
     line-height: 1.7rem;
     margin-left: 2.8rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
 }
 
 
@@ -303,14 +310,14 @@ color: white;
     background-color: #ED813A;
     color: white;
     border: none;
-    padding: 0.8rem 1.3rem ;
+    padding: 1.5rem 2rem ;
     margin-left: 3rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 0.3rem;
 }
 .btn3:hover{
     background-color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border: .1rem solid #ea6813;
     color: #ea6813;
 }
@@ -322,11 +329,14 @@ align-self: center;
 align-content: center;
 background-color: #FFFFFF;
 }
+.hjuy1{
+    display: none;
+}
 .ere{
     margin-top:3pc ;
     margin-left: 5pc;
-    font-size: 1.2rem;
-    width: 35rem;
+    font-size: 1.5rem;
+    width: 50rem;
 }
 div .image12{
     padding-right: 1pc;
@@ -343,8 +353,8 @@ background-color: #FFFFFF;
 .werfg{
     margin-top: 3pc;
     margin-right: 5pc;
-    font-size: 1.2rem;
-    width: 30rem;
+    font-size: 1.5rem;
+    width: 50rem;
 }
 .fg{
     padding-right: 1pc;
@@ -361,8 +371,8 @@ background-color: #FFFFFF;
 .djffj{
     margin-top: 2.5pc;
     margin-left: 5pc;  
-    font-size: 1.2rem;
-    width: 35rem;
+    font-size: 1.5rem;
+    width: 50rem;
 }
 .dfrss{
     display: flex;
@@ -375,10 +385,12 @@ background-color: #FFFFFF;
 .ddsfq{
     margin-top: 4rem;
     margin-right: 5rem;  
-    font-size: 1.2rem;
-    width: 35rem;
+    font-size: 1.5rem;
+    width: 45rem;
 }
-
+.ddsfq h2{
+    padding-bottom: 1.5rem;
+}
 .rep img {
    border: none;
 }
@@ -401,9 +413,9 @@ footer {
     margin-top: 6rem;
 }
 
-.logos img{ 
+div.logos img{ 
     width: 10%;
-    margin-left: 60px;
+    margin-left: 10rem;
     margin-top: 40px;
 }
 
@@ -629,7 +641,7 @@ input:hover {
 
 
 /* Media query for screens smaller than 768px */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: center;
@@ -669,7 +681,7 @@ input:hover {
         margin-left: 0;
     }
 
-    /* Adjustments for main content */
+    /* Adjustments for main content 
     .main {
         padding: 20px;
     }
@@ -682,7 +694,7 @@ input:hover {
         margin-top: 20px;
     }
 
-    /* Adjustments for image and text sections */
+    /* Adjustments for image and text sections 
     .loit,
     .hjuy,
     .yrfuty,
@@ -709,10 +721,111 @@ input:hover {
     .rep {
         margin-top: 20px;
     }
+} */
+
+
+@media(max-width:767px) {
+  *{
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+  } 
+.logs{
+    margin-top: .3rem;
+}
+  .writing{
+    /* width: 50rem; */
+    width: 100%;
+    height: 33.6rem;
+    padding-left: 3px;
+ background-image: none;
+    color: white;
+  }
+  .image12{
+    width: 100%;
+    height: 13.5rem;
+  }
+  .loit{
+    display: block;
+padding-top: 3pc;
+justify-content: center;
+align-self: center;
+align-content: center;
+margin-left: 1.2rem;
+padding-bottom: 1.5rem;
+  }
+  .loit h2{
+    padding-right:.7rem;
+  }
+  .ere{
+    margin-top:3pc ;
+    margin-left: 0pc;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+  .ere p{
+    font-size:1.5rem ;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+  }
+  .hjuy{
+    display: none;
+  }
+  .hjuy1{
+    display: block;
+    padding-top: 5rem;
+justify-content: center;
+ align-self: center;
+align-content: center; 
+margin-left: 1rem;
+padding-bottom: 1rem;
+
+}
+.fg{
+    height: 14.9rem;
+    padding: 2%;
+    width: 47rem;
+}
+.hjuy1  h2{
+margin-left: 1rem;
+}
+.hjuy1 p{
+    padding-top: 1rem;
+}
+.yrfuty{
+    display: block;
+    padding-top: 5pc;
+    justify-content: center;
+     align-self: center;
+    align-content: center; 
+    margin-left: 1rem;
+    
+}
+.djffj{
+    margin-top: 2.5pc;
+    margin-left:-.2rem;  
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.djffj h2{
+font-size: 2rem;
+}
+.djffj p{
+font-size: 1.5rem;
+}
+.dfrss{
+    display: none;
+}
+span h6{
+    margin-left: 4.7rem;
 }
 
-
-
+}
 
 body.dark-theme {
     background-color: #222;
